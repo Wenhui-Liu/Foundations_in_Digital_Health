@@ -13,8 +13,8 @@ Description: In this project, we use We used the MRREL table in the UMLS databas
 
 GitHub link to my source code:
 
-https://github.com/Wenhui-Liu/Foundations_in_Digital_Health/blob/main/p1.ipynb
+https://github.com/Wenhui-Liu/Foundations_in_Digital_Health/blob/main/Project1/p1.ipynb
 
-	Since this GitHub repository is private, you may not be able to link directly to my GitHub. 
-	But I have set you as a collabrator according to the request of your email, so that you can 
-	view it conveniently.
+		Since this GitHub repository is private, you may not be able to link directly to my GitHub. 
+		But I have set you as a collabrator according to the request of your email, so that you can 
+		view it conveniently.
