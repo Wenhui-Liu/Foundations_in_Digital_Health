@@ -26,9 +26,9 @@ Run system against the following query conditions, and save all screen shots in 
 		5. Brain cancer and its synonyms from CHV in note text <br />
 
 
-GitHub link to your source code: <br />
+GitHub link to your source code:
 
-		https://github.com/Wenhui-Liu/Foundations_in_Digital_Health/tree/main/Project2 <br />
+		https://github.com/Wenhui-Liu/Foundations_in_Digital_Health/tree/main/Project2
 
-		Since this GitHub repository is private, you may not be able to link directly to my GitHub. <br />
-		But we have set you as a collabrator, so that you can view it conveniently <br />
+		Since this GitHub repository is private, you may not be able to link directly to my GitHub. 
+		But we have set you as a collabrator, so that you can view it conveniently
