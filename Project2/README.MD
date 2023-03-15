@@ -4,7 +4,8 @@ Project 2-----reademe
 Group Members' Name: Weibin Huang, Wenhui Liu, Yifan Zhang
 E-mail: Weibin_Huang@student.uml.edu, Wenhui_Liu@student.uml.edu, yifan_zhang1@student.uml.edu
 
-Description: In this project: Data extraction and indexing are in Lab2.ipynb. To create a new core, run ./bin/solr create -c test -d path_to/conf.
+Description: 
+			 In this project: Data extraction and indexing are in Lab2.ipynb. To create a new core, run ./bin/solr create -c test -d path_to/conf.
              We've used all the files in conf folder provided in the course github page except the schema.xml. You can replace the managed-schema 
              with our schema.xml in the conf folder and then create the core.  
 
@@ -13,6 +14,7 @@ Description: In this project: Data extraction and indexing are in Lab2.ipynb. To
 
              For GUI search system. The related pthon files are: main.py, UI_model.py and UMLS_CONNECT.py. To get the results for the search system,
              simply run main.py.
+
 
 
             Run system against the following query conditions, and save all screen shots in a file.
