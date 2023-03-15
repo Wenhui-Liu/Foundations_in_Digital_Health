@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name="mimic" version="1.6">
+    <field name="_version_" type="plong" indexed="false" stored="false"/>
+   
+    <!-- points to the root document of a block of nested documents. Required for nested
+       document support, may be removed otherwise
+    -->
+    <field name="_root_" type="string" indexed="true" stored="false" docValues="false" />
+    <!-- The ID field for each note (required) -->
+    <field name="id" type="string" indexed="true" stored="true" required="true" />
+
+    <!-- The date the note was charted (required) -->
+    <field name="chartdate" type="date" indexed="true" stored="true" required="false" />
+
+    <!-- The text of the note (required) -->
+    <field name="text" type="text_general" indexed="true" stored="true" required="false" />
+
+    <!-- Flag indicating whether the patient expired during the hospital stay (required) -->
+    <field name="expire_flag" type="boolean" indexed="true" stored="true" required="false" />
+
+    <!-- The ICD-9 codes associated with the note via admission ID (required) -->
+    <field name="diagnoses" type="string" indexed="true" stored="true" multiValued="true" required="false" />
+
+
+  <uniqueKey>id</uniqueKey>
+
+  <types>
+    <fieldType name="string" class="solr.StrField" />
+    <fieldType name="boolean" class="solr.BoolField" />
+	<fieldType name="plong" class="solr.LongPointField" docValues="true"/>
+    <fieldType name="date" class="solr.TrieDateField" />
+    <fieldType name="text_general" class="solr.TextField">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+  </types>
+</schema>
+

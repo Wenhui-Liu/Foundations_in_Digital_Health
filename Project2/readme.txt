@@ -3,9 +3,20 @@ Project 2-----reademe
 
 Group Members‘ Name: Weibin Huang, Wenhui Liu, Yifan Zhang
 E-mail: Weibin_Huang@student.uml.edu, Wenhui_Liu@student.uml.edu, yifan_zhang1@student.uml.edu
-Description: In this project, we index all ‘Discharge summary’ notes in the MIMIC-III dataset with Solr, then
-             build a user interface that allows user to enter query conditions and returns an ID list (top 20)
-             of satisfying notes.
+
+Description: In this project：Data extraction and indexing are in Part 1 Lab2.ipynb. To create a new 
+             core, run ./bin/solr create -c test -d path_to/conf. We've used all the files in conf folder
+             provided in the course github page except the schema.xml. You can replace the managed-schema
+             with our shcema.xml in the conf folder and then create the core.
+
+		 We've implemented both command line user interface and GUI for the search system. You can find 
+             command line user interface search system in Part 2 in Lab2.ipynb.
+
+             For GUI search system. The related pthon files are: main.py, UI_model.py and UMLS_CONNECT.py. 
+             To get the results for the search system, simply run main.py.
+
+
+
 
             Run system against the following query conditions, and save all screen shots in a file.
 		1. Car crash in note text
